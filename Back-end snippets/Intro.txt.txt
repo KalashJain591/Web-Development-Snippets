@@ -1,0 +1,1 @@
+This Folder contains the back-end snippets . The snippets are depicting some useful functions .All the back-end languages are preferable

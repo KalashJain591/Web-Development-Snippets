@@ -1,0 +1,2 @@
+This Folder contains the front-end snippets . The snippets are depicting some useful front-end functionalities .
+The codes are written using HTML ,javascript,CSS .
