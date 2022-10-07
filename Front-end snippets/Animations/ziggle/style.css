@@ -1,0 +1,59 @@
+/* Animation property */
+button {
+    animation: wiggle 2s linear infinite;
+  }
+  
+  /* Keyframes */
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  
+  body {
+    background: #000;
+    font-size: 16px;
+  }
+  .temp{
+      display: flex;
+      justify-content: center;
+      margin-top: 15%;
+
+  }
+  button {
+    font-size: 2rem;
+    /* position: relative; */
+    /* left: calc(50% - 3em);
+    top: calc(50% - 2em); */
+    align-items: center;
+    height: 14rem;
+    width: 17rem;
+    
+    background: rgb(124, 51, 96);
+    background: linear-gradient(top, #555, #333);
+    border: none;
+    border-top: 3px solid wheat;
+    border-radius: 0 0 0.2em 0.2em;
+    color: #fff;
+    font-family: Helvetica, Arial, Sans-serif;
+ 
+    /* transform-origin: 50% 5em; */
+  }
