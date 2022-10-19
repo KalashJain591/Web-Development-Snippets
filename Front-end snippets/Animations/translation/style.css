@@ -1,21 +1,47 @@
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 div {
-    width: 100px;
-    height: 100px;
+  margin: 35px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+  transition: all 0.1s linear;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+div:hover {
+  scale: 1.18;
+}
+
+@keyframes example {
+  0% {
     background-color: red;
-    position: absolute;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    border-radius: 50%;
+    left: 0%;
+    top: 0%;
   }
-  
-  @keyframes example {
-    0%   {background-color:red; left:0%; top:0%;}
-    25%  {background-color:yellow; left:80%; top:0px;}
-    50%  {background-color:blue; left:80%; top:80%;}
-    75%  {background-color:green; left:0%; top:80%;}
-    100% {background-color:red; left:0px; top:0px;}
+  25% {
+    background-color: yellow;
+    left: 80%;
+    top: 0px;
   }
+  50% {
+    background-color: blue;
+    left: 80%;
+    top: 80%;
+  }
+  75% {
+    background-color: green;
+    left: 0%;
+    top: 80%;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
