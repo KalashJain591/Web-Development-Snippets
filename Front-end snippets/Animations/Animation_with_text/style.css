@@ -1,0 +1,41 @@
+#mobject{
+    width:100px;
+    height:100px;
+   
+    animation-name: moveSquare;
+    animation-duration:18s;
+    animation-delay:1s;
+    position:absolute;
+    animation-iteration-count:infinite;
+}
+
+
+
+
+@keyframes moveSquare{
+    0%{top : 100px; left: 0px;background-color:blue;}
+    12.5%{top: 0px; left: 400px;background-color: pink;width:100px;height:100px;border-radius: 50%;}
+    25%{top:0px;left:800px;background-color: yellow;width:100px; height:100px;border-radius: 20%;}
+    37.5%{top:100px;left:1200px;height:100px;width:150px;border-radius:50%;background-color: red;}
+    50%{top:250px;left:1200px;width:100px;height:125px;border-radius:0%; background: green;}
+    62.5%{top:400px;left:800px; background: black;width:100px;height:125px;border-radius:20%;}
+     75%{top:400px;left:400px;background-color: orange;width:100px;height:100px;border-radius:0%;}
+    87.5%{top:250px;left:0px;background-color: brown;width:100px;height:100px;border-radius: 50%;} 
+    100%{top:100px;left:0px;background-color: blue;height:100px;width:100px;}
+}
+#mobject::before{
+    animation:name 18s linear infinite alternate;
+    content:"8";
+  
+   }
+@keyframes name{
+      0%{top : 100px; left: 0px;color:yellow;content: "I am a square at position top : 100px; left: 0px"}
+    12.5%{top: 0px; left: 400px;border-radius: 50%;color: black;content:"I am a circle at position top :0px; left: 400px";}
+    25%{top:0px;left:800px;width:100px;height:125px;color: black;content:"I am a rounded square at position top : 0px; left: 800px";}
+    37.5%{top:100px;left:1200px;color:yellow;content:"I am an oval at position top : 100px; left: 1200px";}
+    50%{top:250px;left:1200px;color:yellow;content:"I am a rectangle at position top : 250px; left: 1200px";}
+    62.5%{top:400px;left:800px;color:yellow;content:"I am a rounded rectangle at position top : 400px; left: 800px";}
+    75%{top:400px;left:400px;color:black;content:"I am a square  at position top : 400px; left: 400px";}
+    87.5%{top:250px;left:0px;color:yellow;content:"I am a circle at position top : 250px; left: 0px";} 
+    100%{top:100px;left:0px;color:yellow;content:"I am a square at position top : 100px; left: 0px";}
+}
